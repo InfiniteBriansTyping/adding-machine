@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="adding_machine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone 6" translatesAutoresizingMaskIntoConstraints="NO" id="89n-dv-Ick" userLabel="Background">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="adding machine logo" translatesAutoresizingMaskIntoConstraints="NO" id="J7L-vM-NGW" userLabel="Logo">
+                                <rect key="frame" x="148" y="0.0" width="315" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="N0X-pt-4hj"/>
+                                    <constraint firstAttribute="width" constant="272" id="Z7c-Vl-AGZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fc-ja-0W2" userLabel="Play Button">
+                                <rect key="frame" x="194" y="418" width="212" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="137" id="GwA-O8-Dnz"/>
+                                    <constraint firstAttribute="width" constant="175" id="sRm-s1-NER"/>
+                                </constraints>
+                                <state key="normal" image="play 1"/>
+                                <connections>
+                                    <action selector="onPlayBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BqH-X4-qHM"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Which number do you want to use?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HHu-F4-747" userLabel="Number Text">
+                                <rect key="frame" x="148" y="366" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="Oyg-jF-aWN"/>
+                                    <constraint firstAttribute="height" constant="45" id="jeF-0f-6LP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDp-UE-sXZ" userLabel="Add Button">
+                                <rect key="frame" x="191" y="418" width="214" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="AaD-LT-GEQ"/>
+                                    <constraint firstAttribute="height" constant="137" id="ygx-Q8-QeF"/>
+                                </constraints>
+                                <state key="normal" image="add star"/>
+                                <connections>
+                                    <action selector="onAddTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iGb-dK-soQ"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Press add for Mr. Eyes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAq-51-xEo" userLabel="Add text">
+                                <rect key="frame" x="47" y="222" width="432" height="156"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="3" height="1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SDp-UE-sXZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="8" id="1cM-tN-Ue0"/>
+                            <constraint firstItem="HHu-F4-747" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Ov-JX-mcA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="89n-dv-Ick" secondAttribute="bottom" id="Bwb-bI-Jt7"/>
+                            <constraint firstItem="6fc-ja-0W2" firstAttribute="top" secondItem="HHu-F4-747" secondAttribute="bottom" constant="22" id="F4D-lb-VTz"/>
+                            <constraint firstItem="89n-dv-Ick" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Gx4-Vv-PPj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SDp-UE-sXZ" secondAttribute="bottom" constant="17" id="ISz-bm-zhS"/>
+                            <constraint firstItem="oAq-51-xEo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JCR-zx-Y21"/>
+                            <constraint firstItem="6fc-ja-0W2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="8" id="NMB-j1-apM"/>
+                            <constraint firstItem="HHu-F4-747" firstAttribute="top" secondItem="oAq-51-xEo" secondAttribute="bottom" constant="19" id="Piw-QG-H14"/>
+                            <constraint firstItem="J7L-vM-NGW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QUP-X7-6mP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6fc-ja-0W2" secondAttribute="bottom" constant="40" id="U60-YB-l6e"/>
+                            <constraint firstItem="J7L-vM-NGW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="30" id="cf6-oJ-c8l"/>
+                            <constraint firstAttribute="trailing" secondItem="89n-dv-Ick" secondAttribute="trailing" id="klv-kk-QlP"/>
+                            <constraint firstItem="89n-dv-Ick" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zG0-of-k6a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addBtn" destination="SDp-UE-sXZ" id="pQp-XJ-gaq"/>
+                        <outlet property="logoImg" destination="J7L-vM-NGW" id="4tL-Ea-Y0I"/>
+                        <outlet property="numOutput" destination="oAq-51-xEo" id="zYP-mm-L5m"/>
+                        <outlet property="playBtn" destination="6fc-ja-0W2" id="LH5-lt-GO7"/>
+                        <outlet property="whichNumText" destination="HHu-F4-747" id="fVm-rF-LNo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="286" y="323"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add star" width="260" height="201"/>
+        <image name="adding machine logo" width="613" height="99"/>
+        <image name="iPhone 6" width="375" height="672"/>
+        <image name="play 1" width="260" height="198"/>
+    </resources>
+</document>
